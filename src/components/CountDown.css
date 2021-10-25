@@ -1,0 +1,17 @@
+.background {
+  background-color: rgb(221, 76, 76);
+}
+
+.header-Christmas {
+  background-color: rgb(18, 82, 43);
+  border-color: solid 5px white;
+  margin: 250px;
+  padding: 20px;
+}
+
+.countdown {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  color: whitesmoke;
+}
