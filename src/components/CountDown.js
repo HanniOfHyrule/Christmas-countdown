@@ -2,10 +2,10 @@ import "./CountDown.css";
 import { useState, useEffect } from "React";
 
 const CountDown = (props) => {
-  const [days, setDays] = useState(10);
-  const [hours, setHours] = useState(10);
-  const [minutes, setMinutes] = useState(10);
-  const [seconds, setSeconds] = useState(10);
+  const [days, setDays] = useState("H");
+  const [hours, setHours] = useState("O");
+  const [minutes, setMinutes] = useState("H");
+  const [seconds, setSeconds] = useState("O");
 
   const countdown = () => {
     const endDate = new Date("Dec 25, 2021 16:00:00").getTime();
