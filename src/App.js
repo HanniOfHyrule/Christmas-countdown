@@ -2,7 +2,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 // eslint-disable-next-line no-unused-vars
-import background from "./images/8121.jpg";
+import backgroundImage from "./images/blurred-lights-on-christmas-tree.jpg";
 
 function App() {
   const [days, setDays] = useState("H");
@@ -37,27 +37,32 @@ function App() {
 
   return (
     <>
-      <section className="container">
-        <h1>Christmas CountDown</h1>
-        <div className="countdown">
-          <article>
-            <p>{days}</p>
-            <h3>Days</h3>
-          </article>
-          <article>
-            <p>{hours}</p>
-            <h3>Hours</h3>
-          </article>
-          <article>
-            <p>{minutes}</p>
-            <h3>min</h3>
-          </article>
-          <arcticle>
-            <p>{seconds}</p>
-            <h3>sec</h3>
-          </arcticle>
-        </div>
-      </section>
+      <div
+        className="image"
+        style={{ backgroundImage: `url(${backgroundImage})` }}>
+        Weihnachten Foto erstellt von freepik - de.freepik.com
+        <section className="container">
+          <h1>Christmas Countdown</h1>
+          <div className="countdown">
+            <article>
+              <p>{days}</p>
+              <h3>Days</h3>
+            </article>
+            <article>
+              <p>{hours}</p>
+              <h3>Hours</h3>
+            </article>
+            <article>
+              <p>{minutes}</p>
+              <h3>min</h3>
+            </article>
+            <arcticle>
+              <p>{seconds}</p>
+              <h3>sec</h3>
+            </arcticle>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

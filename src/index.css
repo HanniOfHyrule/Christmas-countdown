@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: red;
+  background-color: transparent;
 }
 body {
   font-family: fantasy;
@@ -14,8 +14,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  color: whitesmoke;
   padding: 0 20px;
+  background-color: transparent;
 }
 
 .countdown {
@@ -33,7 +33,7 @@ body {
   padding: 20px;
   border-radius: 5px;
   color: whitesmoke;
-  background-color: rgb(26, 78, 13);
+  background-color: rgb(29, 97, 12);
   font-size: large;
   width: 100px;
   box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
@@ -41,7 +41,8 @@ body {
 }
 
 .container h1 {
-  color: whitesmoke;
+  color: rgb(221, 20, 20);
+
   margin-bottom: 30px;
   text-align: center;
   font-size: 40px;
@@ -50,4 +51,5 @@ body {
 .countdown h3 {
   font-size: 20px;
   margin: 30px;
+  color: red;
 }
