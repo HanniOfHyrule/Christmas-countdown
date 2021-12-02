@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   background-color: transparent;
+  position: initial;
 }
 body {
-  font-family: fantasy;
+  font-family: "dancing script";
 }
 
 .container {
@@ -16,6 +17,8 @@ body {
   min-height: 100vh;
   padding: 0 20px;
   background-color: transparent;
+  width: 100vw;
+  height: 100vh;
 }
 
 .countdown {
@@ -23,21 +26,24 @@ body {
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  overflow: hidden;
 }
 
 .countdown article {
   margin: 10px;
+  overflow-y: hidden;
 }
 
 .countdown p {
   padding: 20px;
   border-radius: 5px;
   color: whitesmoke;
+  text-shadow: 0 0 2px white, 0 0 2px green;
   background-color: rgb(29, 97, 12);
-  font-size: large;
+  font-size: 30px;
   width: 100px;
   box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "dancing script";
 }
 
 .container h1 {
@@ -45,11 +51,11 @@ body {
   color: rgb(221, 20, 20);
   margin-bottom: 30px;
   text-align: center;
-  font-size: 45px;
+  font-size: 60px;
 }
 
 .countdown h3 {
-  font-size: 25px;
+  font-size: 30px;
   margin: 30px;
   color: red;
   text-shadow: 0 0 1px white, 0 0 2px whitesmoke;

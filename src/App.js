@@ -41,6 +41,7 @@ function App() {
         className="image"
         style={{ backgroundImage: `url(${backgroundImage})` }}>
         Weihnachten Foto erstellt von freepik-de.freepik.com
+        <style></style>
         <section className="container">
           <h1>Christmas Countdown</h1>
           <div className="countdown">
