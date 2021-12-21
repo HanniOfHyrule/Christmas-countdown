@@ -11,7 +11,7 @@ function App() {
   const [seconds, setSeconds] = useState("O");
 
   const countdown = () => {
-    const endDate = new Date("Dec 25, 2021 16:00:00").getTime();
+    const endDate = new Date("Dec 24, 2021 16:00:00").getTime();
     const today = new Date().getTime();
 
     const timeDiff = endDate - today;
@@ -34,14 +34,21 @@ function App() {
   useEffect(() => {
     setInterval(countdown, 1000);
   });
+  // const endingCountdown = () => {
+  //   if (countdown === 0) {
+  //     return "Merry Christmas";
+  //   }
+  // };
 
   return (
     <>
       <div
         className="image"
-        style={{ backgroundImage: `url(${backgroundImage})` }}>
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
         Weihnachten Foto erstellt von freepik-de.freepik.com
         <style></style>
+        <div></div>
         <section className="container">
           <h1>Christmas Countdown</h1>
           <div className="countdown">
