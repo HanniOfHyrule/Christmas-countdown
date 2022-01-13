@@ -1,5 +1,6 @@
 import "./CountDown.css";
 import { useState, useEffect } from "React";
+import backgroundImage from "../images/blurred-lights-on-christmas-tree-small.jpg";
 
 const CountDown = (props) => {
   const [days, setDays] = useState("H");
@@ -8,7 +9,7 @@ const CountDown = (props) => {
   const [seconds, setSeconds] = useState("O");
 
   const countdown = () => {
-    const endDate = new Date("Dec 25, 2021 16:00:00").getTime();
+    const endDate = new Date("Dec 24, 2022 16:00:00").getTime();
     const today = new Date().getTime();
 
     const timeDiff = endDate - today;
@@ -28,9 +29,44 @@ const CountDown = (props) => {
     setMinutes(timeMintues);
     setSeconds(timeSeconds);
   };
+
   useEffect(() => {
     setInterval(countdown, 1000);
   });
+
+  return (
+    <>
+      <div
+        className="image"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
+        Weihnachten Foto erstellt von freepik-de.freepik.com
+        <style></style>
+        <div></div>
+        <section className="container">
+          <h1>Christmas Countdown</h1>
+          <div className="countdown">
+            <article>
+              <p>{days}</p>
+              <h3>Days</h3>
+            </article>
+            <article>
+              <p>{hours}</p>
+              <h3>Hours</h3>
+            </article>
+            <article>
+              <p>{minutes}</p>
+              <h3>min</h3>
+            </article>
+            <arcticle>
+              <p>{seconds}</p>
+              <h3>sec</h3>
+            </arcticle>
+          </div>
+        </section>
+      </div>
+    </>
+  );
 };
 
 export default CountDown;
